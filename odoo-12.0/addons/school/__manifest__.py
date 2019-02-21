@@ -9,6 +9,7 @@
 	'website': 'https://www.jenga-agency.com',
 	'depends': ['base'],
 	'data': [
+		'security/ir.model.access.csv',
         'views/student_view.xml'
 	],
 	'images': [],

@@ -37,6 +37,6 @@ Running the application on localhost:
 2. ./odoo-bin --addons-path=addons --db-filter=odoo
 
 How to create a new module:
-odoo-bin scaffold *module name <where to put it>*
+odoo-bin scaffold *module name where to put it*
 
 Following https://www.cybrosys.com/blog/how-to-create-module-in-odoo12 tutorial

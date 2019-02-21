@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class StudentStudent(models.Model):
 	_name = 'student.student'
 

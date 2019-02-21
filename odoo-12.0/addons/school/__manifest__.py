@@ -9,6 +9,7 @@
 	'website': 'https://www.jenga-agency.com',
 	'depends': ['base'],
 	'data': [
+        'views/student_view.xml'
 	],
 	'images': [],
 	'license': 'AGPL-3',

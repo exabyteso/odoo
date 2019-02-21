@@ -32,4 +32,11 @@ from the documentation.
 
 Then follow <a href="https://www.odoo.com/documentation/master/tutorials.html">the developer tutorials</a>
 
-./odoo-bin --addons-path=addons --db-filter=odoo
+Running the application on localhost:
+1. workon odoo-venv
+2. ./odoo-bin --addons-path=addons --db-filter=odoo
+
+How to create a new module:
+odoo-bin scaffold <module name> <where to put it>
+
+Following https://www.cybrosys.com/blog/how-to-create-module-in-odoo12 tutorial

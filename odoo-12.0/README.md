@@ -32,9 +32,22 @@ from the documentation.
 
 Then follow <a href="https://www.odoo.com/documentation/master/tutorials.html">the developer tutorials</a>
 
-Running the application on localhost:
-1. workon odoo-venv
-2. ./odoo-bin --addons-path=addons --db-filter=odoo
+Running the application on a Unix Client:
+1. Download this repo onto your client.
+2. Install virtualenvwrapper if you don't have it.
+  *sudo apt install virtualenvwrapper
+  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh*
+3. Install the tools required to build Odoo dependencies
+  *sudo apt install build-essential python3-dev libxslt-dev libzip-dev libldap2-dev libsasl2-dev*
+4. Create an isolated environment for Odoo
+  *mkvirtualenv -p /usr/bin/python3 odoo-venv*
+5. Install the Odoo's Python dependencies
+  *cd your_odoo_sources_path
+  pip install -r requirements.txt*
+6. To leave the virtual environment execute the command *deactivate*
+7. To reactivate the virtual environment execute *workon odoo-venv*
+8. Run Odoo using:
+  *./odoo-bin --addons-path=addons --db-filter=odoo*
 
 How to create a new module:
 odoo-bin scaffold *module name where to put it*
